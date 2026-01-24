@@ -1,0 +1,391 @@
+/*
+Theme Name: Abinash Theme
+Theme URI: http://localhost
+Author: Abinash
+Description: Custom WordPress theme built from scratch
+Version: 1.0
+*/
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #fafafa;
+  color: #111;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* LAYOUT */
+header {
+  background: #111;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+article {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+article h2 {
+  margin-top: 0;
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+/*Tablet Breakpoint */
+@media (max-width: 768px) {
+  .main-nav ul {
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  main {
+    margin: 40px auto;
+  }
+}
+
+
+/*Desktop Breakpoint */
+@media (min-width: 1024px) {
+  main {
+    max-width: 1100px;
+  }
+
+  header {
+    text-align: left;
+    padding: 20px 40px;
+  }
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.site-header .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+.site-nav {
+  display: none;
+}
+
+/* DESKTOP MENU */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    display: block;
+  }
+
+  .site-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .site-nav a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.woocommerce-account {
+  max-width: 900px;
+  margin: auto;
+}
+
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.site-header .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: -10px;  
+}
+
+.logo a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111;
+}
+
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.main-nav a {
+  color: #333;
+  font-size: 15px;
+}
+
+.main-nav a:hover {
+  color: #000;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.woocommerce ul.products li.product {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.woocommerce ul.products li.product img {
+  border-radius: 10px;
+}
+
+button,
+.button,
+input[type="submit"] {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #000;
+}
+
+/*HERO css */
+.hero {
+  background: linear-gradient(180deg, #f9f9f9, #ffffff);
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.woocommerce ul.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.woocommerce ul.products li.product {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.woocommerce ul.products li.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.woocommerce ul.products li.product img {
+  border-radius: 12px;
+}
+
+.woocommerce-checkout {
+  max-width: 1100px;
+  margin: 60px auto;
+}
+
+.woocommerce-checkout form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.woocommerce-checkout input,
+.woocommerce-checkout select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .woocommerce-checkout form {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+}
+
+.cart-icon {
+  position: relative;
+  font-size: 15px;
+  color: #111;
+}
+
+.cart-icon span {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #111;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Dark mode base */
+body.dark {
+  background: #111;
+  color: #eee;
+}
+
+/* Header in dark mode */
+body.dark .site-header {
+  background: #111;
+  border-bottom: 1px solid #222;
+}
+
+/* Logo in dark mode */
+body.dark .logo a {
+  color: #fff;
+}
+
+/* Menu in dark mode */
+body.dark .main-nav a {
+  color: #ccc;
+}
+
+body.dark .main-nav a:hover {
+  color: #fff;
+}
+
+/* Cards */
+body.dark article,
+body.dark .woocommerce ul.products li.product {
+  background: #1a1a1a;
+}
+
+/* Cart badge */
+body.dark .cart-icon {
+  color: #fff;
+}
+
+body.dark .cart-count {
+  background: #fff;
+  color: #111;
+}
+
+#darkToggle {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body.dark #darkToggle {
+  background: #fff;
+  color: #111;
+}
+

@@ -23,8 +23,9 @@ services:
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wpuser
-      WORDPRESS_DB_PASSWORD: wppassword
+      WORDPRESS_DB_PASSWORD: root
       WORDPRESS_DB_NAME: wordpress
+      PHP_OPCACHE_ENABLE: 1
     volumes:
       - ./wordpress:/var/www/html
 
